@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href='http://fonts.font.im/css?family=Candal' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.font.im/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.font.im/css?family=Dancing+Script' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href='http://fonts.loli.net/css?family=Candal' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.loli.net/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.loli.net/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <style>
+    h1,
+    h2,
+    h3,
+    {
+      margin: 0;
+      font-family: Lobster, Cambria, "Times New Roman", serif;
+    }
+    body{
+      margin:0;
+      font-family: sans-serif;
+      padding-left: 4%;
+      padding-right: 4%;
+      width:auto;
+      height: auto;
+      overflow-x: auto;
+    }
+      header{
+        margin: 0;
+        color: white;
+        width: 100%;
+        background: white;
+      }
+      /*-----------------------------------------header nav*/
+      header .headertop{
+        margin:0;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        background: black;
+        font-size: 13px;
+        font-family: sans-serif;
+        overflow: hidden;
+      }
+      .headertop .nav{
+        float: right;
+        margin-right: 40px;
+      }
+      .headertop .nav ul{
+        margin:0;
+        padding-left: 10px;
+
+      }
+      .headertop .nav li{
+        display: inline;
+        margin-left: 20px;
+        margin-right: 30px;
+      }
+      .headertop .nav a{
+        text-decoration: none;
+        color: white;
+      }
+        /*-----------------------------------------header nav end*/
+        /*-----------------------------------------header main*/
+        header .headermid{
+          margin:0;
+          padding: 0.3em;
+          color: black;
+          font-size: 20pt;
+          font-style: normal;
+          font-weight: bold;
+        }
+        .headermid h2{
+        font-family: 'Candal', sans-serif;
+        }
+        .headermid h2 a{
+          font-weight:bold;
+          color:black;
+        }
+        .headermid ul{
+          margin:0;
+          padding-left: 10px;
+
+        }
+        .headermid li{
+          display: inline;
+        }
+        .headermid a{
+          text-decoration: none;
+          color: white;
+        }
+        .headermid .search{
+          float: right;
+        }
+        /*-----------------------------------------header main end*/
+          /*-----------------------------------------header nav*/
+          nav{
+            margin:0;
+            border: 1px solid #d7d6d6;
+            background: #e1e1e1;
+          }
+        nav .container{
+          margin:0;
+          margin-left: 20px;
+          padding: 15px;
+        }
+        nav ul{
+          margin:0;
+        }
+        nav li{
+          display: inline;
+          margin-right: 90px;
+        }
+        nav a{
+          text-decoration: none;
+          color: black;
+        }
+        .navside{
+          margin:0;
+          padding: 0;
+          color: gray;
+          font-size: 12px;
+        }
+        .navside ol{
+          list-style-type: none;
+          margin:0;
+          padding: 0;
+        }
+        .navside li{
+          display: inline;
+        }
+        .navside li::after{
+          content:">>";
+          color: #999;
+        }
+        .navside li:last-child::after{
+          content:none;
+        }
+        .navside a{
+          text-decoration: none;
+          color: #1864b9;
+        }
+        /*-----------------------------------------header nav end*/
+        /*-----------------------------------------------------section radionav*/
+
+        section ul{
+          list-style-type: none;
+        }
+        .radionav{
+          font-size: 10pt;
+          overflow: hidden;
+        }
+        .radionav ul{
+          float: right;
+        }
+        .radionav li{
+          display: inline;
+        }
+        /*-----------------------------------------------------section radionav end*/
+
+        /*-------------------------------------------------------------------section table*/
+        .list{
+          margin :10px;
+          padding: 10px;
+          height: auto;
+          /*border: 1px solid blue;*/
+        }
+        .list ul{
+          padding-left: 20px;
+          overflow: hidden;
+        }
+        .list li{
+        }
+        .item{
+          margin-bottom: 10px;
+          margin-right: 50px;
+          padding: 10px;
+          padding-bottom: 40px;
+          width: 280px;
+          height: 210px;
+          /*border: 1px solid red;*/
+          float: left;
+          background-color: #FFFFD9;
+          border: 0.5px solid #d7d6d6;
+        }
+        .item table{
+          margin-left: 10px;
+        }
+        .item td{
+          width: 120px;
+          font-size: 12px;
+          /*border: 1px solid green;*/
+        }
+        .item .tit{
+          font-size: 20pt;
+          vertical-align: top;
+        }
+        .tit p{
+          padding: 5px;
+          margin: 5px;
+          font-family: 'Satisfy', cursive;
+        }
+        .tit span{
+          font-family: 'Dancing Script', cursive;
+        }
+        .item .btnarea{
+          text-align: center;
+
+        }
+        .item .btn{
+          margin:5px;
+          padding: 3px 15px 3px 15px;
+          background: skyblue;
+          border: 0.5px solid #d7d6d6;
+        }
+        .item .btn:hover{
+          border: 1px solid #87ceeba6;
+          background-color: #87ceeba6;
+        }
+        /*-------------------------------------------------------------------section table end*/
+        /*-------------------------------------------------------------------footer*/
+        footer{
+          margin:0
+          padding:0;
+        }
+        footer .fwrapper{
+          margin: 20px 0 50px 150px;
+        }
+        .fwrapper table{
+          border-collapse: collapse;
+        }
+        .fwrapper td{
+          padding: 8px;
+          border: 1px solid skyblue;
+        }
+        .fwrapper a{
+          text-decoration: none;
+          color: skyblue;
+        }
+        .fwrapper .onvis{
+          background-color: skyblue;
+          color: white;
+        }
+        /*-------------------------------------------------------------------footer end*/
+        a:hover{
+          color: red;
+        }
+        .nav a:hover{
+          color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+    <div class="headertop">
+              <div class="nav">
+                <ul>
+                  <!-- icon name inbox,shopping-cart,sign-out-alt -->
+                  <li><a href="log.html"><i class="fas fa-inbox"></i> 末登录</a></li>
+                  <li><a href="log.html"><i class="fas fa-shopping-cart"></i> 购物车</a></li>
+                  <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> 退出</a></li>
+                </ul>
+      </div>
+    </div>
+
+    <div class="headermid">
+      <h2><a href="index.html">Art Store</a>
+        <div class="search">
+          <table>
+            <tr>
+              <td><input type="text" name="" value="" placeholder="搜素"></td>
+              <!-- icon name search -->
+              <td><button type="button" name="button"><i class="fas fa-search"></i></button></td>
+            </tr>
+          </table>
+        </div>
+      </h2>
+    </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="sector.html" style="color:skyblue;">搜素</a></li>
+          <li><a href="goodsdetail.html">详细</a></li>
+          <li><a href="log.html">发布艺术品</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="navside">
+      <ol>
+        您的足迹 ：
+        <li><a href="index.html">主页</a></li>
+        <li><a href="index.html/index.html">主页</a></li>
+        <li><a href="index.html/index.html/sector.html">搜素界面</a></li>
+        <li>搜素界面</li>
+      </ol>
+    </div>
+
+    <section>
+      <ul>
+        <li><h2>搜素结果：</h2></li>
+        <li>
+          <div class="radionav">
+            <ul>
+              <li>排序方式</li>
+              <li>价格:<input type="radio" name="duration" value="" checked></li>
+              <li>热搜:<input type="radio" name="duration" value=""></li>
+              <li>标题:<input type="radio" name="duration" value=""></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+
+          <div class="list">
+            <!--item package start-->
+            <ul>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001020.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001020 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn1()">热度<span id="mmm1">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001050.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001050 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn2()">热度<span id="mmm2">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001060.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001060 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn3()">热度<span id="mmm3">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <!--item package end-->
+            <!--item package start-->
+            <ul>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001080.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001080 wiht...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn4()">热度<span id="mmm4">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001090.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001090 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn5()">热度<span id="mmm5">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001100.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001100 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn6()">热度<span id="mmm6">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <!--item package end-->
+            <!--item package start-->
+            <ul>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001130.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001130 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn7()">热度<span id="mmm7">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001140.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001140 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn8()">热度<span id="mmm8">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001150.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001150 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn9()">热度<span id="mmm9">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <!--item package end-->
+            <!--item package start-->
+            <ul>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001170.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001170 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn10()">热度<span id="mmm10">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001180.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001180 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn11()">热度<span id="mmm11">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001190.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001190 wiht...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn" onclick="btn12()">热度<span id="mmm12">0</span></button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <!--item package end-->
+
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <div class="fwrapper">
+        <table>
+          <tbody>
+            <tr>
+              <td><i class="fas fa-angle-left"></i></td>
+              <td class="onvis"><em>1</em></td>
+              <td><a rel="next" href="sector2.html">2</a></td>
+              <td><a href="sector3.html">3</a></td>
+              <td><a href="sector4.html">4</a></td>
+              <td><a href="sector5.html">5</a></td>
+              <td><a href="sector6.html">6</a></td>
+              <td><a href="sector7.html">7</a></td>
+              <td><a href="sector8.html">8</a></td>
+              <td><a href="sector9.html">9</a></td>
+              <td><a href="sector10.html">10</a></td>
+              <td><a href="sector11.html">11</a></td>
+              <td><a href="sector12.html">12</a></td>
+              <td><a href="sector13.html">13</a></td>
+              <td><a href="sector14.html">14</a></td>
+              <td><a href="sector15.html">15</a></td>
+              <td><a href="sector16.html">16</a></td>
+              <td><a href="sector17.html">17</a></td>
+              <td><a href="sector18.html">18</a></td>
+              <td><a href="sector19.html">19</a></td>
+              <td><a href="sector20.html">20</a></td>
+              <td><a href="sector21.html">21</a></td>
+              <td><a href="sector22.html">22</a></td>
+              <td><a href="sector23.html">23</a></td>
+              <td><a href="sector24.html">24</a></td>
+              <td><a href="sector25.html">25</a></td>
+              <td><a rel="next" href="sector2.html"><i class="fas fa-angle-right"></i></a></td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      function btn1(){
+        var i=0;
+            var arr = document.getElementById('mmm1');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+      function btn2(){
+        var i=0;
+            var arr = document.getElementById('mmm2');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+      function btn3(){
+        var i=0;
+            var arr = document.getElementById('mmm3');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+      function btn4(){
+        var i=0;
+            var arr = document.getElementById('mmm4');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+      function btn5(){
+        var i=0;
+            var arr = document.getElementById('mmm5');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+      function btn6(){
+        var i=0;
+            var arr = document.getElementById('mmm6');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+      function btn7(){
+        var i=0;
+            var arr = document.getElementById('mmm7');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+      function btn8(){
+        var i=0;
+            var arr = document.getElementById('mmm8');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+      function btn9(){
+        var i=0;
+            var arr = document.getElementById('mmm9');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+      function btn10(){
+        var i=0;
+            var arr = document.getElementById('mmm10');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+      function btn11(){
+        var i=0;
+            var arr = document.getElementById('mmm11');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+      function btn12(){
+        var i=0;
+            var arr = document.getElementById('mmm12');
+        alert("aaa");
+        arr.innerHTML=++i;
+      }
+
+    </script>
+  </body>
+</html>

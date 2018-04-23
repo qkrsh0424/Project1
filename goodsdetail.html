@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Goods detail</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href='http://fonts.loli.net/css?family=Satisfy' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.loli.net/css?family=Candal' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.loli.net/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.loli.net/css?family=Lobster+Two:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.loli.net/css?family=Aldrich' rel='stylesheet' type='text/css'>
+    <style>
+    h1,
+    h2,
+    h3,
+    {
+      margin: 0;
+      font-family: Lobster, Cambria, "Times New Roman", serif;
+    }
+
+    body{
+      margin:0;
+      font-family: sans-serif;
+      padding-left: 4%;
+      padding-right: 4%;
+      width:auto;
+      height: auto;
+      overflow-x: auto;
+    }
+      header{
+        margin: 0;
+        color: white;
+        width: 100%;
+      }
+      header .headertop{
+        margin:0;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        background: black;
+        font-size: 13px;
+        font-family: sans-serif;
+        overflow: hidden;
+      }
+      .headertop .nav{
+        float: right;
+        margin-right: 40px;
+      }
+      .headertop .nav ul{
+        margin:0;
+        padding-left: 10px;
+
+      }
+      .headertop .nav li{
+        display: inline;
+        margin-left: 20px;
+        margin-right: 30px;
+      }
+      .headertop .nav a{
+        text-decoration: none;
+        color: white;
+      }
+
+      header .headermid{
+        margin:0;
+        padding: 0.3em;
+        color: black;
+        font-size: 20pt;
+        font-style: normal;
+        font-weight: bold;
+      }
+      .headermid h2{
+      font-family: 'Candal', sans-serif;
+      }
+      .headermid h2 a{
+        color:black;
+      }
+      .headermid ul{
+        margin:0;
+        padding-left: 10px;
+
+      }
+      .headermid li{
+        display: inline;
+      }
+      .headermid a{
+        text-decoration: none;
+        color: white;
+      }
+      .headermid .search{
+        float: right;
+      }
+      header .nav{
+        float: right;
+        margin-right: 40px;
+      }
+      header .nav a{
+        text-decoration: none;
+        color: white;
+      }
+      span{
+        margin-right: 10px;
+      }
+      header span{
+        font-family: 'Dancing Script', cursive;
+      }
+      header ul{
+        margin:0;
+        padding-left: 10px;
+
+      }
+      header li{
+        display: inline;
+      }
+      header a{
+        text-decoration: none;
+        color: white;
+      }
+      header .search{
+        float: right;
+      }
+
+      .button{
+        background-image: url("images/works/square-tiny/001020.jpg");
+      }
+      /*---------------------------navigation*/
+      nav{
+        margin:0;
+        border: 1px solid #d7d6d6;
+        background: #e1e1e1;
+      }
+      nav .container{
+        margin:0;
+        margin-left: 20px;
+        padding: 15px;
+      }
+      nav ul{
+        margin:0;
+      }
+      nav li{
+        display: inline;
+        margin-right: 90px;
+      }
+      nav a{
+        text-decoration: none;
+        color: black;
+      }
+      .navside{
+        margin:0;
+        padding: 0;
+        color: gray;
+        font-size: 12px;
+      }
+      .navside ol{
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+      }
+      .navside li{
+        display: inline;
+      }
+      .navside li::after{
+        content:">>";
+        color: #999;
+      }
+      .navside li:last-child::after{
+        content:none;
+      }
+      .navside a{
+        text-decoration: none;
+        color: #1864b9;
+      }
+
+      section{
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+      }
+
+      section .main{
+        width: 75%;
+        padding: 1em;
+      }
+      section .main h1{
+        font-family: 'Satisfy', cursive;
+      }
+
+      section .main ul{
+        margin:0;
+        padding: 0;
+        list-style-type: none;
+      }
+      section .main li{
+        overflow: hidden;
+      }
+      section .main .thumb{
+        float: left;
+        margin-right: 20px;
+      }
+      section .summary{
+
+      }
+      section .summary button{
+        background: skyblue;
+        border: 1px solid skyblue;
+        padding: 8px;
+      }
+      section .summary button:hover{
+        border: 1px solid #87ceeba6;
+        background-color: #87ceeba6;
+      }
+      section p{
+        margin: 0;
+        font-size: 12px;
+      }
+      section .summary li{
+        display: inline;
+      }
+      section .summary table{
+        margin-top: 1em;
+        width: 400px;
+        text-align: left;
+        border-collapse: collapse;
+      }
+
+      .summary table th{
+        background-color: #e1e1e1;
+        text-align: center;
+      }
+
+      section table td{
+        padding: 5px;
+      }
+      .sidebar td{
+        font-family: 'Satisfy', cursive;
+      }
+      .summary h2{
+        font-family: 'Aldrich', sans-serif;
+      }
+      .summary h2 span{
+        color: red;
+      }
+/*--------------------section sidebar----------------------------------*/
+  section .sidebar{
+    width: 25%;
+  }
+      section .sidebar ul{
+        list-style-type: none;
+      }
+      section .sidebar li{
+        float: right;
+      }
+      .sidebar table{
+        width: 300px;
+        margin-bottom: 30px;
+        border: 1px solid blue;
+        text-align: center;
+        border-collapse: collapse;
+      }
+      .sidebar td,th{
+        border:1px solid black;
+        padding: 10px;
+      }
+      .sidebar th{
+        background-color: #8de2d3;
+        font-style: italic;
+      }
+      /* a hover copy */
+      a:hover{
+        color: red;
+      }
+      .nav a:hover{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="headertop">
+        <div class="title">
+            <ul>
+              <li>欢迎来到 <span>Art Store</span></li>
+              <li><a href="log.html">登录</a> 或 <a href="newaccount.html">注册</a></li>
+
+              <li>
+                <div class="nav">
+                  <ul>
+                    <!-- icon name inbox,shopping-cart,sign-out-alt -->
+                    <li><a href="log.html"><i class="fas fa-inbox"></i> 末登录</a></li>
+                    <li><a href="log.html"><i class="fas fa-shopping-cart"></i> 购物车</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> 退出</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="headermid">
+        <h2><a href="index.html">Art Store</a>
+          <div class="search">
+            <table>
+              <tr>
+                <td><input type="text" name="" value="" placeholder="搜素"></td>
+                <!-- icon name search -->
+                <td><button type="button" name="button"><i class="fas fa-search"></i></button></td>
+              </tr>
+            </table>
+
+          </div>
+        </h2>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="sector.html">搜素</a></li>
+          <li><a href="goodsdetail.html" style="color:skyblue;">详细</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="navside">
+      <ol>
+        您的足迹 ：
+        <li><a href="index.html">主页</a></li>
+        <li><a href="index.html/index.html">主页</a></li>
+        <li><a href="index.html/index.html/indivinform.html">个人页面</a></li>
+        <li><a href="index.html/index.html/indivinform.html/index.html">主页</a></li>
+        <li>第20件商品详细</li>
+      </ol>
+    </div>
+
+    <section>
+      <div class="main">
+        <ul>
+          <li>
+            <h1>Mother and Child(Olga and son)</h1>
+            <h5>By <span style="font-family: 'Lobster Two', cursive;">stabi park</span></h5>
+          </li>
+          <li>
+              <img src="images/works/large/001130.jpg" alt="" width="350px" height="500px" class="thumb">
+            <div class="summary">
+              <p>This work is amazing but there is no introduction for it.</p>
+              <h2>PRICE : <span>100,000</span></h2>
+                <ul>
+                  <!-- icon name star shopping-cart -->
+                  <li><button type="button" name="button"><i class="fas fa-star"></i> Add To Wish List</button></li>
+                  <li><button type="button" name="button"><i class="fas fa-shopping-cart"></i> Add To Shopping Cart</button></li>
+                </ul>
+
+              <table>
+                <tbody>
+                  <tr>
+                    <th colspan="2">Product Detail</th>
+                  </tr>
+
+                  <tr>
+                    <td>Date:</td> <td>1922</td>
+                  </tr>
+
+                  <tr>
+                    <td>Medium:</td> <td>Oil on canvas</td>
+                  </tr>
+
+                  <tr>
+                    <td>Dimensions:</td> <td>100cm X 80cm</td>
+                  </tr>
+
+                  <tr>
+                    <td>Home:</td> <td>Baltimore Art Museum</td>
+                  </tr>
+
+                  <tr>
+                    <td>Genres</td> <td>Neoclassical</td>
+                  </tr>
+
+                  <tr>
+                    <td>Subjects:</td> <td>People,Family</td>
+                  </tr>
+                  <tr>
+                    <td>Heat:</td> <td>13</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar">
+        <div class="item">
+        <ul>
+          <li>
+            <table>
+              <tbody>
+                <tr>
+                  <th>流行艺术家</th>
+                </tr>
+                <tr>
+                  <td>crasdia</td>
+                </tr>
+                <tr>
+                  <td>adfagg</td>
+                </tr>
+                <tr>
+                  <td>afgwerfga</td>
+                </tr>
+                <tr>
+                  <td>arggrvf</td>
+                </tr>
+                <tr>
+                  <td>vbcjdxyj</td>
+                </tr>
+                <tr>
+                  <td>ryakj</td>
+                </tr>
+                <tr>
+                  <td>wrunbv</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li>
+            <table>
+              <tbody>
+                <tr>
+                  <th>流行流派</th>
+                </tr>
+                <tr>
+                  <td>Classic</td>
+                </tr>
+                <tr>
+                  <td>cabaim</td>
+                </tr>
+                <tr>
+                  <td>impression</td>
+                </tr>
+                <tr>
+                  <td>banrosn</td>
+                </tr>
+                <tr>
+                  <td>nangsu</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

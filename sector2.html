@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href='http://fonts.font.im/css?family=Candal' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.font.im/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.font.im/css?family=Dancing+Script' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href='http://fonts.loli.net/css?family=Candal' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.loli.net/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.loli.net/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <style>
+    h1,
+    h2,
+    h3,
+    {
+      margin: 0;
+      font-family: Lobster, Cambria, "Times New Roman", serif;
+    }
+    body{
+      margin:0;
+      font-family: sans-serif;
+      padding-left: 4%;
+      padding-right: 4%;
+      width:auto;
+      height: auto;
+      overflow-x: auto;
+    }
+      header{
+        margin: 0;
+        color: white;
+        width: 100%;
+      }
+      /*-----------------------------------------header nav*/
+      header .headertop{
+        margin:0;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        background: black;
+        font-size: 13px;
+        font-family: sans-serif;
+        overflow: hidden;
+      }
+      .headertop .nav{
+        float: right;
+        margin-right: 40px;
+      }
+      .headertop .nav ul{
+        margin:0;
+        padding-left: 10px;
+
+      }
+      .headertop .nav li{
+        display: inline;
+        margin-left: 20px;
+        margin-right: 30px;
+      }
+      .headertop .nav a{
+        text-decoration: none;
+        color: white;
+      }
+        /*-----------------------------------------header nav end*/
+        /*-----------------------------------------header main*/
+        header .headermid{
+          margin:0;
+          padding: 0.3em;
+          color: black;
+          font-size: 20pt;
+          font-style: normal;
+          font-weight: bold;
+        }
+        .headermid h2{
+        font-family: 'Candal', sans-serif;
+        }
+        .headermid h2 a{
+          font-weight:bold;
+          color:black;
+        }
+        .headermid ul{
+          margin:0;
+          padding-left: 10px;
+
+        }
+        .headermid li{
+          display: inline;
+        }
+        .headermid a{
+          text-decoration: none;
+          color: white;
+        }
+        .headermid .search{
+          float: right;
+        }
+        /*-----------------------------------------header main end*/
+          /*-----------------------------------------header nav*/
+          nav{
+            margin:0;
+            border: 1px solid #d7d6d6;
+            background: #e1e1e1;
+          }
+        nav .container{
+          margin:0;
+          margin-left: 20px;
+          padding: 15px;
+        }
+        nav ul{
+          margin:0;
+        }
+        nav li{
+          display: inline;
+          margin-right: 90px;
+        }
+        nav a{
+          text-decoration: none;
+          color: black;
+        }
+        .navside{
+          margin:0;
+          padding: 0;
+          color: gray;
+          font-size: 12px;
+        }
+        .navside ol{
+          list-style-type: none;
+          margin:0;
+          padding: 0;
+        }
+        .navside li{
+          display: inline;
+        }
+        .navside li::after{
+          content:">>";
+          color: #999;
+        }
+        .navside li:last-child::after{
+          content:none;
+        }
+        .navside a{
+          text-decoration: none;
+          color: #1864b9;
+        }
+        /*-----------------------------------------header nav end*/
+        /*-----------------------------------------------------section radionav*/
+
+        section ul{
+          list-style-type: none;
+        }
+        .radionav{
+          font-size: 10pt;
+          overflow: hidden;
+        }
+        .radionav ul{
+          float: right;
+        }
+        .radionav li{
+          display: inline;
+        }
+        /*-----------------------------------------------------section radionav end*/
+
+        /*-------------------------------------------------------------------section table*/
+        .list{
+          margin :10px;
+          padding: 10px;
+          height: auto;
+          /*border: 1px solid blue;*/
+        }
+        .list ul{
+          padding-left: 20px;
+          overflow: hidden;
+        }
+        .list li{
+        }
+        .item{
+          margin-bottom: 10px;
+          margin-right: 50px;
+          padding: 10px;
+          padding-bottom: 40px;
+          width: 280px;
+          height: 210px;
+          /*border: 1px solid red;*/
+          float: left;
+          background-color: #FFFFD9;
+          border: 0.5px solid #d7d6d6;
+        }
+        .item table{
+          margin-left: 10px;
+        }
+        .item td{
+          width: 120px;
+          font-size: 12px;
+          /*border: 1px solid green;*/
+        }
+        .item .tit{
+          font-size: 20pt;
+          vertical-align: top;
+        }
+        .tit p{
+          padding: 5px;
+          margin: 5px;
+          font-family: 'Satisfy', cursive;
+        }
+        .tit span{
+          font-family: 'Dancing Script', cursive;
+        }
+        .item .btnarea{
+          text-align: center;
+
+        }
+        .item .btn{
+          margin:5px;
+          padding: 3px 15px 3px 15px;
+          background: skyblue;
+          border: 0.5px solid #d7d6d6;
+        }
+        .item .btn:hover{
+          border: 1px solid #87ceeba6;
+          background-color: #87ceeba6;
+        }
+        /*-------------------------------------------------------------------section table end*/
+        /*-------------------------------------------------------------------footer*/
+        footer{
+          margin:0
+          padding:0;
+        }
+        footer .fwrapper{
+          margin: 20px 0 50px 150px;
+        }
+        .fwrapper table{
+          border-collapse: collapse;
+        }
+        .fwrapper td{
+          padding: 8px;
+          border: 1px solid skyblue;
+        }
+        .fwrapper a{
+          text-decoration: none;
+          color: skyblue;
+        }
+        .fwrapper .onvis{
+          background-color: skyblue;
+          color: white;
+        }
+        /*-------------------------------------------------------------------footer end*/
+        a:hover{
+          color: red;
+        }
+        .nav a:hover{
+          color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+    <div class="headertop">
+              <div class="nav">
+                <ul>
+                  <!-- icon name inbox,shopping-cart,sign-out-alt -->
+                  <li><a href="log.html"><i class="fas fa-inbox"></i> 末登录</a></li>
+                  <li><a href="log.html"><i class="fas fa-shopping-cart"></i> 购物车</a></li>
+                  <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> 退出</a></li>
+                </ul>
+      </div>
+    </div>
+
+    <div class="headermid">
+      <h2><a href="index.html">Art Store</a>
+        <div class="search">
+          <table>
+            <tr>
+              <td><input type="text" name="" value="" placeholder="搜素"></td>
+              <!-- icon name search -->
+              <td><button type="button" name="button"><i class="fas fa-search"></i></button></td>
+            </tr>
+          </table>
+        </div>
+      </h2>
+    </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="sector.html" style="color:skyblue;">搜素</a></li>
+          <li><a href="goodsdetail.html">详细</a></li>
+          <li><a href="log.html">发布艺术品</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="navside">
+      <ol>
+        您的足迹 ：
+        <li><a href="index.html">主页</a></li>
+        <li><a href="index.html/index.html">主页</a></li>
+        <li><a href="index.html/index.html/sector.html">搜素界面</a></li>
+        <li>搜素界面</li>
+      </ol>
+    </div>
+
+    <section>
+      <ul>
+        <li><h2>搜素结果：</h2></li>
+        <li>
+          <div class="radionav">
+            <ul>
+              <li>排序方式</li>
+              <li>价格:<input type="radio" name="duration" value="" checked></li>
+              <li>热搜:<input type="radio" name="duration" value=""></li>
+              <li>标题:<input type="radio" name="duration" value=""></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+
+          <div class="list">
+            <!--item package start-->
+            <ul>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001260.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001260 wiht...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001270.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001270 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/001280.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>001280 wiht...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <!--item package end-->
+            <!--item package start-->
+            <ul>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/002020.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>002020 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/002030.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>002030 wiht...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/002040.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>002040 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <!--item package end-->
+            <!--item package start-->
+            <ul>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/002070.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>002070 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/002080.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>002080 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/005010.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>005010 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <!--item package end-->
+            <!--item package start-->
+            <ul>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/005040.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>005040 wiht...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/005050.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>005050 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <!--item-->
+              <li>
+                <div class="item">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td><img src="images/works/large/005060.jpg" alt="" width="110px" height="110px"></td><td class="tit"><p>005060 with...</p><span>stabi park</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">This portrait was eloquently described by Giorgio.....</td>
+                      </tr>
+                      <tr>
+                        <td class="btnarea"><button type="button" name="button" class="btn" onclick="location='goodsdetail.html';">查看</button> </td><td class="btnarea"><button type="button" name="button" class="btn">热度</button> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+            <!--item package end-->
+
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <div class="fwrapper">
+        <table>
+          <tbody>
+            <tr>
+              <td><a rel="prev start" href="sector.html"><i class="fas fa-angle-left"></i></a></td>
+              <td><a rel="prev start" href="sector.html">1</a></td>
+              <td class="onvis"><em>2</em></td>
+              <td><a rel="next" href="sector3.html">3</a></td>
+              <td><a href="sector4.html">4</a></td>
+              <td><a href="sector5.html">5</a></td>
+              <td><a href="sector6.html">6</a></td>
+              <td><a href="sector7.html">7</a></td>
+              <td><a href="sector8.html">8</a></td>
+              <td><a href="sector9.html">9</a></td>
+              <td><a href="sector10.html">10</a></td>
+              <td><a href="sector11.html">11</a></td>
+              <td><a href="sector12.html">12</a></td>
+              <td><a href="sector13.html">13</a></td>
+              <td><a href="sector14.html">14</a></td>
+              <td><a href="sector15.html">15</a></td>
+              <td><a href="sector16.html">16</a></td>
+              <td><a href="sector17.html">17</a></td>
+              <td><a href="sector18.html">18</a></td>
+              <td><a href="sector19.html">19</a></td>
+              <td><a href="sector20.html">20</a></td>
+              <td><a href="sector21.html">21</a></td>
+              <td><a href="sector22.html">22</a></td>
+              <td><a href="sector23.html">23</a></td>
+              <td><a href="sector24.html">24</a></td>
+              <td><a href="sector25.html">25</a></td>
+              <td><a rel="next" href="sector3.html"><i class="fas fa-angle-right"></i></a></td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </footer>
+  </body>
+</html>
